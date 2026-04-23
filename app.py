@@ -1,4 +1,11 @@
 #%%writefile app.py
+import subprocess
+import sys
+def install(package):
+   subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+# Usage
+install("requests")
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
