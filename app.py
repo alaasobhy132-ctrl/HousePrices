@@ -4,7 +4,7 @@ import sys
 def install(package):
    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 # Usage
-install("requests")
+install("plotly-express")
 
 import streamlit as st
 import pandas as pd
